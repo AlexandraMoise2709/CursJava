@@ -9,8 +9,8 @@ package Curs2;
 public class Tester {
 	
 	//variabile
-	String numeTester;//String default null
-	int varstaTester;//numeric default 0
+	private String numeTester;//String default null
+	private int varstaTester;//numeric default 0
 	
 	//metoda
 	public void afiseazaDetaliiTester() {
@@ -23,13 +23,13 @@ public class Tester {
 	}
 	//constructor default  
 	
-	public Tester() {};
+	//public Tester() {};
 	
 	//Tester tester1 = new Tester()
-	public Tester(String nume, int varsta) {
+	public Tester(String numeTester, int varstaTester) {
 		
-		numeTester= nume;
-		varstaTester = varsta;
+		this.numeTester= numeTester;
+		this.varstaTester = varstaTester;
 		
 	};
 
