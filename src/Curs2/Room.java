@@ -21,7 +21,7 @@ public class Room {
 	public Room (double lungime, double latime) {
 		this.lungime= lungime;
 		this.latime = latime;	
-		this.culoare = culoare;		
+				
 	}
 	
 	public Room (double lungime, double latime, String culoare) {
