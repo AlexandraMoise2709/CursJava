@@ -31,7 +31,7 @@ public class SimpleCalculator {
 		
 		System.out.println("Please operation:");
 		
-		num2 = nextInt();
+		num2 = scan.next().charAt(0);
 		
 		
 		System.out.println("Introdu al doilea numar:");
