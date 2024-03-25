@@ -14,11 +14,16 @@ public class HomeworkEx3 {
 	}	
 		public void atribuieCalificativ() {
 			calculeazaCalificativ();
+
 		
-		String calificativ = (punctaj > 80 )? (punctaj>=90)? "FB" : "B":"S";
-			
-		System.out.println("Ai primit: " + calificativ);
 		
+		String calificativ = (punctaj>=90)?"FB":(punctaj<90&&punctaj>=80)?"B":"S";
+
+		String message = (calificativ == "FB" )? "Ai primit : FoarteBine" : (calificativ == "B") ?
+				"Ai primit : Bine":"Ai primit : Suficient";
+		
+		System.out.println( message);
+
 	}
 	
 	}
