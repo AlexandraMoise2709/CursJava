@@ -4,7 +4,7 @@ public class Palindrom {
 
 	public static void main(String[] args) {
 	
-		String cuvant = "r0adar";
+		String cuvant = "radar";
 		String cuvantIntors = "";
 		
 		/*
