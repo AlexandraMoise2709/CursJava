@@ -20,14 +20,14 @@ public class ForAndWhile {
 					
 			if(numar1>numar2) {
 				
-				for(int i= numar2;i<numar1;i++){
+				for(int i= numar2+1;i<numar1;i++){
 					if(i % 2 ==0) {
 					System.out.println(i);
 					}
 				}
 			} else if(numar1 < numar2){
 				
-				for(int i= numar1;i<numar2;i++){
+				for(int i= numar1+1;i<numar2;i++){
 					if(i % 2 ==0) {
 					System.out.println(i);
 					}
