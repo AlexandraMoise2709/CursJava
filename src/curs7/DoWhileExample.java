@@ -1,31 +1,38 @@
 package curs7;
 
+import java.util.Scanner;
+
+/*
+ * 
+ *  validez daca un username nu este null si nu este mai mic decat 6
+ *  daca nu respecta cer din nou
+ * 
+ */
 public class DoWhileExample {
 
 	public static void main(String[] args) {
+
+		Scanner scan  = new Scanner(System.in);
+		System.out.println("Introdu un username:");
+		String username = scan.next();
 		
-		String[] array= {"Iasi","Cluj","brasov","Pitesti"};
-		
-		int i = 0;
-		while(i>array.length) {
+		while(username.equals(null) || username.length() <6) {
 			
-			
-			System.out.println(array[i]);
-			i++;
+			System.out.println("Introdu un username:");
+			username = scan.next();
 		}
 		
+		System.out.println("-------------------------------------------");
 		
-		System.out.println("-----------");
+		String username2;
 		
+		do {
+			
+			System.out.println("Introdu un username:");
+			username2 = scan.next();
+			
+		}while(username2.equals(null) || username2.length() <6);
+		
+	}
 
-	
-	int j=0;
-	do {
-		
-		System.out.println(array[j]);
-		j++;
-		
-	}while (j> array.length);
-
-}
 }
