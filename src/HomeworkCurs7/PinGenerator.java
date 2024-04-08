@@ -20,6 +20,9 @@ public class PinGenerator {
 				break;
 			}else numarIncercari--;
 			System.out.println("Wrong PIN");
+            if (numarIncercari > 0) {
+                System.out.println("Mai ai " + numarIncercari + " incercari. Mai introdu o data:");
+            }
 			if  (numarIncercari==0)  {
 				System.out.println("Maximum attempts reached. Card blocked");
 			}
