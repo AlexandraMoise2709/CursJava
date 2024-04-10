@@ -10,7 +10,7 @@ public class Qualification extends Teacher {
 	
 	public void Verify(String Course, int ExperienceYears, String Schedule ) {
 		
-		if(ExperienceYears>3 && Course.equals("Java") && Schedule.equals("Afternoon")) {
+		if(super.ExperienceYears>3 && super.Course.equals("Java") && super.Schedule.equals("Afternoon")) {
 			
 			System.out.println("You qualify to teach at this school!");
 		}else {
