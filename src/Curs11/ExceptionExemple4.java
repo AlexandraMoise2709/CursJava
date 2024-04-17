@@ -1,11 +1,11 @@
 package Curs11;
 
-public class TestProduct {
+public class ExceptionExemple4 {
 
 	public static void main(String[] args) {
-
-
-		//Product obj = new Product();
+		
+		
+		
 
 	}
 

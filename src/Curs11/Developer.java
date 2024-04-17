@@ -1,9 +1,9 @@
-package curs11;
+package Curs11;
 
 public class Developer implements Angajat {
 
 	@Override
-	public void setName(String name) {
+	public void setName(String namae) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -26,4 +26,5 @@ public class Developer implements Angajat {
 		return null;
 	}
 
+	
 }
