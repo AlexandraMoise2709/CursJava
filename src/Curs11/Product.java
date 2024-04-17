@@ -1,5 +1,13 @@
-package Curs11;
+package curs11;
 
-public class Product {
+public abstract class Product {
+	
+	public String numeProdus;
+	
+	public abstract int caluclatePrice();
+	
 
+	public void productRating() {
+		System.out.println("The best product");
+	}
 }

@@ -1,10 +1,11 @@
-package Curs11;
+package curs11;
 
 public class TestProduct {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		//Product obj =  new Product();
+		
 	}
 
 }
