@@ -1,14 +1,14 @@
-package Curs10Package1;
+package curs10Package1;
 
 public class AltaClasaDefaultModifier {
-
+	//* Alta clasa in acelasi pachet : yes
+	
 	public static void main(String[] args) {
 
-		DefaultAccessModifier defaultAccessModifier =  new DefaultAccessModifier();
+		DefaultAccesModifier obj = new DefaultAccesModifier();
+		obj.printMesaj();
 		
-		defaultAccessModifier.printMesaj();
 		
-
 	}
 
 }

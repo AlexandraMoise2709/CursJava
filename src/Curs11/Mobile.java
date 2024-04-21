@@ -1,20 +1,19 @@
-package Curs11;
+package curs11;
 
-public class Mobile extends Product {
+public class Mobile extends Product{
 
 	private int buyPrice;
 	private int tva;
 	
-	public Mobile(int buyPrice, int tva) {
-		
+	public Mobile(int buyPrice,int tva ) {
 		this.buyPrice = buyPrice;
-		this.tva= tva;
+		this.tva = tva;
 	}
 	
+	
 	@Override
-	public int calculatePrice() {
-		// TODO Auto-generated method stub
-		return buyPrice+tva;
+	public int caluclatePrice() {
+		return buyPrice + tva;
 	}
 
 }

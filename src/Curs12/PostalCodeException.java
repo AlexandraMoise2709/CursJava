@@ -1,10 +1,9 @@
-package Curs12;
+package curs12;
 
-public class PostalCodeException {
+public class PostalCodeException extends Exception{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public PostalCodeException(String mesaj) {
+		super(mesaj);
 	}
-
+	
 }

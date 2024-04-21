@@ -1,22 +1,23 @@
-package Curs10Package1;
+package curs10Package1;
 
 public class ProtectedAccesModifier {
-/*Scpul lui in acelasi pachet si subclasedin alte pachete
- * clasele nu pot fi declarate ca protected
- * Aceasi clasa :yes
- * alta clasa acelasi pachet:yes
- * sub clasa acelasi pacekt:da
- * Alta clasa din alt pachekt:nu
- * subclasa din alt packet:yes
+/*
+ * Scopul lui protected este in acelasi pachet si sub clase din alte pachete
+ * Clasele nu pot fi declarate ca protected
+ * 
+ * Aceasi clasa : yes
+ * Alta clasa acelasi pachet : yes
+ * Sub-clasa sau clasa copil acelasi pachet : yes
+ * Alta clasa din alt pachet : no
+ * Sub-clasa sau clasa copil din  alt pachet : yes
  * 
  */
 	
 	
-	protected String mesaj = "Protected Access modifier";
-	
+	protected String mesaj = "Protected acces modifier";
+
 	protected void printMesaj() {
-		
-		
 		System.out.println(mesaj);
 	}
+
 }

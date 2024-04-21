@@ -1,13 +1,11 @@
-package Curs10Package1;
+package curs10Package1;
 
 public class AltaClasaProtectedModifier {
 
 	public static void main(String[] args) {
-
-		ProtectedAccesModifier obj = new ProtectedAccesModifier();
-		
+		// * Alta clasa acelasi pachet : yes
+		ProtectedAccesModifier obj =  new ProtectedAccesModifier();
 		obj.printMesaj();
-		
 		
 	}
 
