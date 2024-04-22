@@ -91,6 +91,40 @@ public class PropertiesFileProcessor {
 		
 		
 	}
+		
+		
+		public void updatePropertiesFile(String key) {
+			
+			try(FileInputStream input = new FileInputStream("test.properties")){
+				
+				Properties propFile = new Properties();
+				
+				propFile.load(input);
+				propFile.get(key);
+				System.out.println(propFile.getProperty(key));
+				
+			}catch(IOException e) {	
+				
+				System.out.println("Nu am putut scrie fisierul! ");
+				e.printStackTrace();
+			}
+			
+		
+			
+			try(FileOutputStream output = new FileOutputStream("test.properties")) {
+				Properties propFile = new Properties();
+			
+				propFile.setProperty(output, null);
+				propFile.store(output, null);
+	
+				
+			}catch(IOException e) {	
+				
+				System.out.println("Nu am putut face update in fisierul! ");
+				e.printStackTrace();
+			}
+			
+		}
 	
 	
 	
