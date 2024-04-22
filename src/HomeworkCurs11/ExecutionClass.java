@@ -7,7 +7,10 @@ public class ExecutionClass {
 	public static void main(String[] args) throws InsufficientFundsException {
 		
 		double suma;
-		Customer accountOwner =  new Customer("Alexandra", "adresa","shaah");	
+		Customer accountOwner =  new Customer("Alexandra", "adresa","shaah");
+		SavingsAccount savingsAccount = new SavingsAccount(1234, 100, accountOwner);
+		
+		
 		
 		System.out.println("Hi " + customer.getName());
 		
@@ -15,9 +18,7 @@ public class ExecutionClass {
 		Scanner scan = new Scanner(System.in);
 		suma = scan.nextDouble();
 
-		SavingsAccount savingsAccount = new SavingsAccount(0, 0, accountOwner);
-		
-		;
+	
 		//int accountNumber, double balance, Customer accountOwner
 		
 		savingsAccount.setBalance(scan.nextDouble());
