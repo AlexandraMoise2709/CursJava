@@ -12,13 +12,13 @@ public class ExecutionClass {
 		
 		
 		
-		System.out.println("Hi " + customer.getName());
+		System.out.println("Hi " + accountOwner.getName());
 		
 		System.out.println("Please insert the amount that you wish to widraw");
 		Scanner scan = new Scanner(System.in);
 		suma = scan.nextDouble();
 
-	
+		
 		//int accountNumber, double balance, Customer accountOwner
 		
 		savingsAccount.withdraw(suma);	

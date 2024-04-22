@@ -5,19 +5,23 @@ package HomeworkCurs11;
 public class Account {
 
 	private int accountNumber ;
-	public static double balance;
+	public double balance;
 	public Customer accountOwner;
 	
-	public Account(int accountNumber,double balance, Customer accountOwner) {
+	
+	
+	public Account(int accountNumber, double balance, Customer accountOwner) {
 		
 		this.accountNumber = accountNumber;
 		this.balance = balance;
-		this.accountOwner = accountOwner;		
+		this.accountOwner = accountOwner;
 		
 	}
-	
-	
-	public static void withdraw(Double suma) throws InsufficientFundsException {
+
+
+
+
+	public void withdraw(double suma) throws InsufficientFundsException {
 		
 		if(suma <=0) {
 			
@@ -28,6 +32,8 @@ public class Account {
 	} 
 	
 }
+	
+
 
 
 	public int getAccountNumber() {
@@ -58,4 +64,7 @@ public class Account {
 	public void setAccountOwner(Customer accountOwner) {
 		this.accountOwner = accountOwner;
 	}
+
+
+	
 }
