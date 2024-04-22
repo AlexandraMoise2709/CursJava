@@ -21,12 +21,7 @@ public class ExecutionClass {
 	
 		//int accountNumber, double balance, Customer accountOwner
 		
-		savingsAccount.setBalance(scan.nextDouble());
-		
-		System.out.println();
-		suma = scan.nextDouble(); 
-		savingsAccount.withdraw(suma);
-		
+		savingsAccount.withdraw(suma);	
 		
 		
 	
