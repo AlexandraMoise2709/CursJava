@@ -1,15 +1,14 @@
 package curs13;
 
-public class TestJsonFile {
+public class TestJsonfile {
 
 	public static void main(String[] args) {
 
-
-		JsonFileProcessor obj = new JsonFileProcessor();
+		JsonFileProcessor obj =  new JsonFileProcessor();
 		obj.writeJsonFile();
 		
 		obj.readJsonFile("name");
-
+		
 	}
 
 }

@@ -9,7 +9,7 @@ executie( customer = new Customer (“ion”, ”adresa”, etc))
  */
 public class Customer {
 	
-	public String name, address, email;
+	private String name, address, email;
 	public Customer(String name, String address, String email) {
 		this.name = name;
 		this.address = address;

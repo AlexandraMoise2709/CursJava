@@ -23,19 +23,20 @@ public class SavingsAccount extends Account {
     @Override
     public void withdraw(double suma) {
         try {
-            if (suma > balance) {
+            if (suma > balance || suma <0) {
                 throw new InsufficientFundsException("The amount you entered is greater than the available balance: " + balance);
             } else {
                 balance -= suma;
                 System.out.println("Please pick your money!");
-                System.out.println("Thank you for using our ATM");
-                System.out.println("Your new balance is " + balance);
+               System.out.println("Your new balance is " + balance);
             }
         } catch (InsufficientFundsException e) {
             System.out.println(e.getMessage());
-            System.out.println("Thank you for using our ATM");
+            
             e.printStackTrace();
+        } finally {
+        	System.out.println("Thank you for using our ATM");
         }
-    }
+        }
     
 }
