@@ -8,11 +8,11 @@ public class Catalog {
 
 	public static void main(String[] args) {
 		
-		Map<String, String> catalog = new HashMap<>(); 
+		Map<String, Integer> catalog = new HashMap<>(); 
 		
-		catalog.put("Andrei", "7");
-		catalog.put("Oana", "6");
-		catalog.put("Corina", "5");
+		catalog.put("Andrei", 7);
+		catalog.put("Oana", 6);
+		catalog.put("Corina", 5);
 		
 		
 		
@@ -21,12 +21,12 @@ public class Catalog {
 			String key = scan.next();
 			System.out.println("Ce nota ai luat?");
 			
-			String value = scan.next();
+			int value = scan.nextInt();
 			
 			boolean checkKey = catalog.containsKey(key);
 			
 			if (checkKey) {
-			    if (value.equals(catalog.get(key))) {
+			    if (value > catalog.get(key)) {
 			        catalog.replace(key, value);
 			        System.out.println();
 			    } else {
