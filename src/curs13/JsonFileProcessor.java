@@ -64,5 +64,21 @@ public class JsonFileProcessor {
 		
 	}
 	
+	public void updateJsonFile(String key, String value) {
+		
+		try(FileReader input  = new FileReader("test.json"){
+			JSONParser parser = new JSONParser();
+			JSONObject jsonObj = (JSONObject) parser.parse(input);
+			jsonObj.put(key, value);
+			
+			
+			
+		}}catch(Exception e) {
+			System.out.println("Nu am putut citi fisierul");
+			e.printStackTrace();
+		}
+		
+	}
+	
 
 }
