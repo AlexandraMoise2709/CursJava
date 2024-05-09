@@ -13,15 +13,34 @@ public class StringsBuilder {
 
     public static void main(String[] args) {
     	
-    	//addNewLine(text);
-//    	int occurences = countOccurrences(text,wordToCheck);
-//    	System.out.println(occurences);
     	
+    	int occurences = countOccurrences(text,wordToCheck);
+    	System.out.println(occurences);
+    	addNewLine(text);
     	deleteChar(text);
+    	replaceWithSB(text);
+   
     	
             }
+    //numara aparitia cuvantului nulla
+		public static int countOccurrences(String text, String wordToCheck){   		
+	    
+		
+		int count = 0;
+        int index = 0;
+
+        while ((index = text.indexOf(wordToCheck, index)) != -1) {
+            count++;
+            index += wordToCheck.length();
+            
+        }
+
+	return count;		
+	
+
+}
     
-    
+    //adauga new line dupa fiecare propozitie
     	public static void addNewLine(String text) {
     		
     		String stringModified = text.replace(".",".\n");
@@ -31,65 +50,45 @@ public class StringsBuilder {
     		
     	}
     	
-    	
-    	//Prima metoda va verifica de catre ori apare cuvantul “Nulla” in
-    	//acest string si va printa numarul
-    
-    
-    	
-    	
-    	
-		public static int countOccurrences(String text, String wordToCheck){   		
-    
-    		
-//    			int count = 0;
-//    	        int index = 0;
-//
-//    	        while ((index = text.indexOf(wordToCheck, index)) != -1) {
-//    	            count++;
-//    	            index += wordToCheck.length();
-//    	            
-//    	        }
-			int count =0;
-    		for(int i=0;i<text.length();i++) {
-    			
-    			
-    			if(text.indexOf(wordToCheck, i)==i) {
-    				
-    				count++; 
-    				i += wordToCheck.length() - 1;
-    				
-    			} 
-    		}
-			return count;		
-    		
-
-		}        
-    		
-			public static void deleteChar(String text) {
+    	//sterge toate 'a'-urile
+    	public static void deleteChar(String text) {
 				
-			StringBuilder stb = new StringBuilder();
+			StringBuilder stb = new StringBuilder(text);
 			char charToDelete = 'a';
-			for (int i =0; i<text.length();i++) {
+			int i=0;
+			
+			while(i<stb.length()) {
 				
 				if(stb.charAt(i) == charToDelete) {
-					
-					stb.deleteCharAt(i);
-					i--;
-					
-				} System.out.println(text);
+				stb.deleteCharAt(i);
+				
+					}i++;				 
+					}
+				System.out.println(stb);
+				
 			}
+				
+			
+
+			//‘o’ cu caracterul ‘#’
+		
+		public static void replaceWithSB(String text) {
+			char oldChar = 'o';
+			char newChar = '#';
+			int i=0;
+			StringBuilder stb = new StringBuilder(text);
+			
+			while(i<stb.length()) {
+				if (stb.charAt(i)==oldChar) {				
+					stb.setCharAt(i, newChar);
+				}i++;				
+				
+			}System.out.println(stb);			
+				
 				
 			}
 			
-    		
-    		
-    	
-    	
-    	
-    	
-    	
-    
-    
-    
-}
+			
+		}
+			
+
