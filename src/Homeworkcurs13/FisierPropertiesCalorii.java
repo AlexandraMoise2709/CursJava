@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class FisierPropertiesCalorii {
 
@@ -34,31 +35,28 @@ public void writeCaloriesPropertiesFile() {
 
 		Properties propFile =  new Properties();
 		propFile.load(input);
+		Scanner scan = new Scanner(System.in);
 		
-		if(key!=null) {
-			String value = propFile.getProperty(key);
+;
+		 String value = propFile.getProperty(key);		
 		
-		
-		 if (value!=null) {
-			 
-			 System.out.println("Leguma aleasa de tine are " + value );
-		 }else {
-			 System.out.println("Leguma aleasa de tine nu exista");
-			 System.out.println("Te rog introdu alta ");		 }
-		 
-
-		} else {
+		while (value==null) {
+				 System.out.println("Nu vindem aceasta leguma");
+				 System.out.println("Te rog introdu alta ");
+				 
+				key = scan.nextLine();
+				value = propFile.getProperty(key);		
+				 				 
+				 
+		} System.out.println("Leguma aleasa de tine are "  +value );
 			
-			System.out.println("Leguma aleasa de tine nu exista");
-		}
-		
 
 	}catch(IOException e) {
 		System.out.println("Nu am putut citi fisierul");
 		e.printStackTrace();
-	}
 
 	}
+}
 }
 
 	

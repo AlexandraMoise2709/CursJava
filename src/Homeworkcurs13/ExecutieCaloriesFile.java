@@ -5,16 +5,19 @@ import java.util.Scanner;
 public class ExecutieCaloriesFile {
 
 	public static void main(String[] args) {
-		String key;
+		
 		
 		FisierPropertiesCalorii obj = new FisierPropertiesCalorii();
-		//obj.writeCaloriesPropertiesFile();
+		obj.writeCaloriesPropertiesFile();
 		
 		System.out.println("Ce leguma vrei sa cumperi?");
-		Scanner scan = new Scanner(System.in);
-		key = scan.next();
 		
-		obj.readCaloriesPropertiesFile(key);
+		try (Scanner scan = new Scanner(System.in)) {
+			String key = scan.nextLine();
+
+			
+			obj.readCaloriesPropertiesFile(key);
+		}
 
 	}
 
